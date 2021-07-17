@@ -1,0 +1,27 @@
+body{
+margin:auto;
+text-align: center;
+min-height: 100vh;
+}
+
+h1{
+  display: inline-block;
+  margin-top: 100px;
+
+}
+p{
+  display: inline-block;
+}
+.image {
+  float: right;
+  position: absolute;
+  width: 30%;
+}
+.cardwidth{
+  width: 30%;
+  margin-left: 100px;
+}
+h2{
+  display: inline-block;
+  color: black;
+}

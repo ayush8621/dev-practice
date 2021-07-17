@@ -1,0 +1,120 @@
+@import './config', './default';
+
+
+
+body{
+    background: $very-dark-blue;
+    color: $white;
+    @include flexCenter(column);
+    height: 100%;
+
+}
+
+.container{
+    background: $dark-blue;
+    border-radius: 10px;
+    margin: $mg;
+    height: auto;
+    overflow: hidden;
+    @include desktop{
+        @include flexCenter(row-reverse);
+    }
+    .background{
+        position: relative;
+        @include desktop{
+            width: 50%;
+        }
+        &-mobile{
+            width: 100%;
+            @include desktop{
+                display: none;
+            }
+        }
+        &-desktop{
+            display: none;
+            width: 100%;
+            @include desktop{
+                display: block;
+            }
+        }
+        &::before{
+        
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: hsl(277, 80%, 28%);
+            opacity: 0.65;
+            z-index: 1;       
+        }
+    }
+    
+    &-body{
+        padding: $pd;
+        @include desktop{
+            padding: $pd $pd + 2.5em;
+            width: 50%;
+            > div {
+                text-align: left !important;
+            }
+        }
+        .heading{
+            margin-bottom: 1.75rem;
+            text-align: center;
+            line-height: 2.5rem;
+            
+            h1{
+                font-size: 2rem;
+                margin-bottom : 1rem;
+                span{
+                    color: $soft-violet;
+                }
+
+                @include desktop{
+                    line-height: 3rem;
+                }
+            }
+            
+            p{
+                color: $transparent-white;
+                @include desktop{
+                    margin-top: 1.75rem;
+                }
+            }
+        }
+
+        .footer{
+            text-align: center;
+            @include tablet{
+                @include flexCenter(row);   
+                justify-content: space-around;
+            }
+
+            @include desktop{
+                justify-content: space-between;
+                margin-top: 5rem;
+            }
+            > div{
+                margin-bottom: 1.5rem;
+                *{
+                    margin-bottom: .25rem;
+                }
+    
+            
+            }
+
+            &-name{
+                font-family: $deca-ff;
+                color: $slightly-white;
+                text-transform: uppercase;
+                letter-spacing: .1rem;
+                
+            }
+        
+        }
+    }
+}

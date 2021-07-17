@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+// Primary Color
+$very-dark-blue: hsl(233, 47%, 7%);
+$dark-blue: hsl(244, 38%, 16%);
+$soft-violet: hsl(277, 64%, 61%);
+
+$white: hsl(0, 0%, 100%);
+// Neutral
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+$slightly-white: hsla(0, 0%, 100%, 0.6);
+
+$fs: 15px;
+
+$inter-ff: 'Inter', sans-serif;
+$deca-ff: 'Lexend Deca', sans-serif;
+
+$normal: 400;
+$bold: 700;
+
+
+$mg: 1.5em;
+$pd: 2.5em; 
+
+@mixin flexCenter($direction){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin tablet{
+    @media (min-width: 600px){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media (min-width: 1300px){
+        @content;
+    }
+}
+
+// Tablet and Desktop
+body{
+    @include desktop{
+        min-height: 100vh;
+    }
+}
+
+.container{
+    @include tablet{
+        max-width: 800px;
+    }
+
+    @include desktop{
+        max-width: 1200px;
+    }
+}

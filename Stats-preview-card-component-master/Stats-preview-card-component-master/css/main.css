@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@media (min-width: 1300px) {
+  body {
+    min-height: 100vh;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #090b1a;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.container {
+  background: #1b1938;
+  border-radius: 10px;
+  margin: 1.5em;
+  height: auto;
+  overflow: hidden;
+}
+
+@media (min-width: 1300px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.container .background {
+  position: relative;
+}
+
+@media (min-width: 1300px) {
+  .container .background {
+    width: 50%;
+  }
+}
+
+.container .background-mobile {
+  width: 100%;
+}
+
+@media (min-width: 1300px) {
+  .container .background-mobile {
+    display: none;
+  }
+}
+
+.container .background-desktop {
+  display: none;
+  width: 100%;
+}
+
+@media (min-width: 1300px) {
+  .container .background-desktop {
+    display: block;
+  }
+}
+
+.container .background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #550e81;
+  opacity: 0.65;
+  z-index: 1;
+}
+
+.container-body {
+  padding: 2.5em;
+}
+
+@media (min-width: 1300px) {
+  .container-body {
+    padding: 2.5em 5em;
+    width: 50%;
+  }
+  .container-body > div {
+    text-align: left !important;
+  }
+}
+
+.container-body .heading {
+  margin-bottom: 1.75rem;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.container-body .heading h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-body .heading h1 span {
+  color: #aa5cdb;
+}
+
+@media (min-width: 1300px) {
+  .container-body .heading h1 {
+    line-height: 3rem;
+  }
+}
+
+.container-body .heading p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media (min-width: 1300px) {
+  .container-body .heading p {
+    margin-top: 1.75rem;
+  }
+}
+
+.container-body .footer {
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .container-body .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container-body .footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 5rem;
+  }
+}
+
+.container-body .footer > div {
+  margin-bottom: 1.5rem;
+}
+
+.container-body .footer > div * {
+  margin-bottom: .25rem;
+}
+
+.container-body .footer-name {
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+/*# sourceMappingURL=main.css.map */

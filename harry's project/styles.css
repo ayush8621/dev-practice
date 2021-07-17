@@ -1,0 +1,38 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('images/sky-5375005_1920.jpg');
+  color: #fff;
+}
+.item{
+  padding: 2px 3px;
+  text-decoration: none;
+}
+.leftitem{
+  position: absolute;
+display: inline-block;
+left: 20px;
+top: 38px;
+font-size: 20px;
+}
+a[class='items'] {
+  font-size: 20px;
+  color: white
+}
+li:last-child{
+  font-style: italic;
+}
+.miditem{
+    display:block;
+  width:30%;
+  margin: 20px auto;
+}
+.rightitem{
+  position:absolute;
+  display: inline-block;
+  right:30px;
+  top: 30px;
+}
+.btn{
+
+}

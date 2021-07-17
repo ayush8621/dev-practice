@@ -1,0 +1,153 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #22254b;
+}
+.navbar-nav{
+  margin-right: 20px;
+  border: 2px solid black;
+}
+.nav-item{
+font-weight: bold;
+}
+.logo {
+  box-sizing: border-box;
+  margin-right: 20px;
+  margin-top: 0.5px;
+  padding: 2px;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.searchdiv {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: .5rem;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+
+.searchform {
+  margin: auto;
+  width: 45%;
+  padding: 10px;
+}
+
+.form-control, .btn {
+  border-radius: 1.25rem;
+}
+
+.info {
+  margin-top: 35px;
+}
+
+.col-md-5 {
+  width: 33.8%;
+}
+
+.row {
+  margin-top: 90px;
+}
+
+.featurette-divider {
+  margin-top: 2rem;
+}
+
+.homeh1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.marketing {
+  margin-left: 200px;
+}
+
+.movieposth1 {
+  margin-left: 166px;
+  margin-top: 10px;
+  font-size: 1.7rem;
+  margin-bottom: 30px;
+  border: 1px solid black;
+  width: 25%;
+}
+
+.suggested-movies {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 400px;
+}
+
+.recommended-movies-img {
+  transition: width 0.5s, height 0.5s
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+}
+
+.recommended-movies-img:hover {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  /* width: 375px; */
+  /* height: 325px; */
+}
+
+.grid-item {
+  width: 330px;
+  height: 300px;
+  margin: 50px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.grid-item-content {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay > *{
+  transform: translateY(30px);
+  transition: transform .5s;
+}
+
+.overlay:hover > *{
+  transform: translateY(0);
+}
+
+.movieimage {
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.image-button{
+  border: 0;
+  padding: 0;
+}
